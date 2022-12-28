@@ -1,0 +1,22 @@
+{
+  "name": "@brownsugar/stylelint-config",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Preferred Stylelint configs for myself.",
+  "scripts": {
+    "release": "lerna publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brownsugar/stylelint-config.git"
+  },
+  "author": "Lay",
+  "license": "MIT",
+  "homepage": "https://github.com/brownsugar/stylelint-config",
+  "devDependencies": {
+    "lerna": "^6.3.0"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
+}
