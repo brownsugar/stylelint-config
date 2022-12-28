@@ -1,6 +1,6 @@
 {
   "name": "@brownsugar/stylelint-config-scss",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Preferred Stylelint configs for SCSS.",
   "main": "index.js",
   "files": [
