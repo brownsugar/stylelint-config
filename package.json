@@ -4,7 +4,8 @@
   "version": "0.0.0",
   "description": "Preferred Stylelint configs for myself.",
   "scripts": {
-    "release": "lerna publish"
+    "release": "lerna publish",
+    "lint": "eslint ."
   },
   "repository": {
     "type": "git",
@@ -14,6 +15,8 @@
   "license": "MIT",
   "homepage": "https://github.com/brownsugar/stylelint-config",
   "devDependencies": {
+    "@brownsugar/eslint-config-typescript": "^1.0.5",
+    "eslint": "^8.30.0",
     "lerna": "^6.3.0"
   },
   "workspaces": [
