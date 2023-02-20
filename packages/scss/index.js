@@ -9,11 +9,9 @@ module.exports = {
     'scss/double-slash-comment-empty-line-before': null,
     'scss/no-global-function-names': null,
     'color-function-notation': null,
-    'color-hex-case': 'upper',
+    'declaration-property-value-no-unknown': true,
     'no-empty-source': null,
-    'number-leading-zero': 'never',
     'selector-class-pattern': null,
-    'string-quotes': 'single',
     'rule-empty-line-before': [
       'always',
       {
