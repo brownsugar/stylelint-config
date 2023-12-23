@@ -16,9 +16,9 @@
   "homepage": "https://github.com/brownsugar/stylelint-config",
   "devDependencies": {
     "@brownsugar/eslint-config-typescript": "^1.0.7",
-    "eslint": "^8.34.0",
-    "lerna": "^6.5.1",
-    "stylelint": "^15.2.0"
+    "eslint": "^8.56.0",
+    "lerna": "^8.0.1",
+    "stylelint": "^16.0.2"
   },
   "workspaces": [
     "packages/*"
