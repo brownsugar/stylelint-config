@@ -5,7 +5,8 @@
   "description": "Preferred Stylelint configs for myself.",
   "scripts": {
     "release": "lerna publish",
-    "lint": "eslint ."
+    "lint:style": "stylelint invalid.scss",
+    "lint:js": "eslint ."
   },
   "repository": {
     "type": "git",
