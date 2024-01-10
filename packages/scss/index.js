@@ -2,7 +2,7 @@ module.exports = {
   extends: [
     'stylelint-config-standard-scss',
     'stylelint-config-recommended-vue/scss',
-    'stylelint-config-recess-order'
+    'stylelint-config-recess-order',
   ],
   rules: {
     'order/properties-alphabetical-order': null,
@@ -16,8 +16,8 @@ module.exports = {
       'always',
       {
         except: ['after-rule'],
-        ignore: ['after-comment']
-      }
-    ]
-  }
+        ignore: ['after-comment'],
+      },
+    ],
+  },
 }
