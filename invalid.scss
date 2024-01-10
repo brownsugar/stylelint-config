@@ -2,10 +2,13 @@
   display: block
 }
 
-.alter:after {color: red; content: 'example'}
+.alter:after {color: red;content: 'example'}
 
 .delete {
   display: block;;
+}
+.delete:before {
+  content: "";
 }
 .wrong-order {
   background-color: slategray;
@@ -19,7 +22,16 @@
   transition: opacity 300ms ease;
   width: 320px;
 }
+.correct-order {
+  width: 10px;
+  height: 10px;
+}
 /* Comment */
 .empty {
 }
 .unknown { top: unknown; }
+.colors {
+  color: rgb(0 0 0 / 0.5);
+  background: rgb(255, 255, 255);
+  opacity: 50%;
+}
