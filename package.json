@@ -1,6 +1,6 @@
 {
   "name": "@brownsugar/stylelint-config",
-  "version": "2.1.0",
+  "version": "3.0.0-rc.0",
   "description": "Preferred Stylelint configs for myself.",
   "scripts": {
     "build": "rollup -c",
