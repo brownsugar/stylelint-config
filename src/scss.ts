@@ -10,6 +10,12 @@ export default <Config>{
   rules: {
     // General rules
     'alpha-value-notation': 'number',
+    'color-function-notation': [
+      'modern',
+      {
+        ignore: ['with-var-inside'],
+      },
+    ],
     'declaration-property-value-no-unknown': true,
     'no-empty-source': null,
     'rule-empty-line-before': [
