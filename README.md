@@ -2,18 +2,20 @@
 
 Preferred Stylelint configs for myself.
 
-## For SCSS
-
-### Install
+## Install
 
 ```bash
-yarn add -D @brownsugar/stylelint-config-scss
+yarn add -D @brownsugar/stylelint-config
+# or
+pnpm add -D @brownsugar/stylelint-config
 ```
+
+## For SCSS
 
 ### .stylelintrc
 
 ```json
 {
-  "extends": "@brownsugar/stylelint-config-scss"
+  "extends": "@brownsugar/stylelint-config"
 }
 ```
