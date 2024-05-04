@@ -1,5 +1,7 @@
 # Stylelint Config
 
+[![Publish NPM Package](https://github.com/brownsugar/stylelint-config/actions/workflows/main.yml/badge.svg)](https://github.com/brownsugar/stylelint-config/actions/workflows/main.yml)
+
 Preferred Stylelint configs for myself.
 
 ## Install
