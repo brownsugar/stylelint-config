@@ -1,27 +1,57 @@
 {
   "name": "@brownsugar/stylelint-config",
-  "private": true,
-  "version": "0.0.0",
+  "version": "2.1.0",
   "description": "Preferred Stylelint configs for myself.",
   "scripts": {
-    "release": "lerna publish",
+    "build": "rollup -c",
     "lint:style": "stylelint invalid.scss",
-    "lint:js": "eslint ."
+    "lint:js": "eslint .",
+    "postversion": "git push && git push --tags"
   },
+  "exports": {
+    ".": {
+      "import": "./dist/scss.mjs",
+      "require": "./dist/scss.cjs"
+    },
+    "./scss": {
+      "import": "./dist/scss.mjs",
+      "require": "./dist/scss.cjs"
+    }
+  },
+  "main": "./dist/scss.cjs",
+  "module": "./dist/scss.mjs",
+  "types": "./dist/scss.d.ts",
+  "files": [
+    "dist"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/brownsugar/stylelint-config.git"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   },
   "author": "Lay",
   "license": "MIT",
   "homepage": "https://github.com/brownsugar/stylelint-config",
   "devDependencies": {
-    "@brownsugar/eslint-config-typescript": "^2.2.4",
-    "eslint": "^8.56.0",
-    "lerna": "^8.0.2",
-    "stylelint": "^16.1.0"
+    "@brownsugar/eslint-config": "3.0.0-rc.2",
+    "eslint": "^9.2.0",
+    "rollup": "^4.17.2",
+    "rollup-plugin-typescript2": "^0.36.0",
+    "stylelint": "^16.5.0",
+    "tslib": "^2.6.2",
+    "typescript": "^5.4.5"
   },
-  "workspaces": [
-    "packages/*"
-  ]
+  "dependencies": {
+    "@stylistic/stylelint-config": "^1.0.1",
+    "postcss-html": "^1.6.0",
+    "stylelint-config-recess-order": "^5.0.1",
+    "stylelint-config-recommended-vue": "^1.5.0",
+    "stylelint-config-standard-scss": "^13.1.0"
+  },
+  "peerDependencies": {
+    "stylelint": ">=16"
+  }
 }

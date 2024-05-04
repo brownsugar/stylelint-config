@@ -1,5 +1,6 @@
-/** @type {import('stylelint').Config} */
-module.exports = {
+import type { Config } from 'stylelint'
+
+export default <Config>{
   extends: [
     'stylelint-config-standard-scss',
     'stylelint-config-recommended-vue/scss',
